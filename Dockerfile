@@ -1,6 +1,6 @@
 FROM node:10
 
-WORKDIR /usr/src/app/api
+WORKDIR /index
 
 COPY package*.json ./
 
