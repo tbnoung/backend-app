@@ -14,4 +14,4 @@
   npm init
 ```
 #### ผลลัพธ์ จะได้ไฟล์ packege.json
-[[image][https://www.img.in.th/images/fd6ecb75e2ae620c5785629b554851ec.png]]
+![Test Image 1](https://www.img.in.th/images/fd6ecb75e2ae620c5785629b554851ec.png)
