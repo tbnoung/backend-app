@@ -1,10 +1,10 @@
-FROM node:boron
+FROM node
 
 RUN mkdir -p /user/src/app
 WORKDIR /user/src/app
 
 COPY package.json /user/src/app
-RUN npm install
+RUN npm install 
 
 COPY . /user/src/app
 
