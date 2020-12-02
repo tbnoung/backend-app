@@ -24,16 +24,35 @@ npm i express nodemon
   "name": "create-express",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts":"",
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
+```
+### เพิ่ม script ให้ เรียก npm start เเล้วจะเป็นการรันโปรเจค (ไฟล์ package.json)
+```
+{
+  "name": "create-express",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
     "start": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
 }
+
 ```
-### เพิ่ม script ให้ เรียก npm start เเล้วจะเป็นการรันโปรเจค (ไฟล์ package.json)
-![](https://www.img.in.th/images/2e309d653b417159968d5a3934491ebb.png)
 
 
 
