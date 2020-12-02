@@ -53,6 +53,48 @@ npm i express nodemon
 }
 
 ```
+### สร้างไฟล์ index.js 
+```
+const express = require('express')
+const app = express()
+
+app.get('/backend', (req, res) => {
+  res.send('Success Connect Serve Tbnoung')
+})
+
+app.listen(3000, () => {
+  console.log('Sever up and running', 3000 )
+})
+```
+## สร้าง Dockerfile ไว้ที่ root ของ folder โปรเจค
+```
+FROM node
+
+RUN mkdir -p /user/src/app
+WORKDIR /user/src/app
+
+COPY package.json /user/src/app
+RUN npm install 
+
+COPY . /user/src/app
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
+```
+## สร้าง .dockerignore ไว้ที่ root ของ folder โปรเจค
+```
+node_modules
+npm-debug.log
+```
+## Build ไฟล์ image บน vm
+```
+docker build . -t nameimage
+```
+## run docker image
+```
+docker run -d -p 3000:3000 nameimage
+```
 
 
 
