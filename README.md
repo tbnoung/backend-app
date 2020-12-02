@@ -22,4 +22,8 @@ npm i express nodemon
 ```
 #### ผลลัพธ์จะได้ไฟล์ nodemodule เพิ่มในส่วนของไฟล์ package.json ก็จะมี module ตามที่ติดตั้งไป
 ![](https://www.img.in.th/images/c0194b82b454aab1c709acd0a7d2799a.png)
+### เพิ่ม script ให้ เรียก npm start เเล้วจะเป็นการรันโปรเจค (ไฟล์ package.json)
+![](https://www.img.in.th/images/2e309d653b417159968d5a3934491ebb.png)
+
+
 
